@@ -8,7 +8,7 @@ for i in range(1, n + 1):  # left part
     for z in range(i, 0, -1):  # digits left
         print(" ", end="")
 
-    for j in range(2, i + 1):  # digits right
+    for j in range(1, i + 1):  # digits right
         print(j, end="")
 
     print("")
@@ -22,7 +22,7 @@ for i in range(n, 0, -1):  # left part
     for z in range(i, 0, -1):  # digits left
         print(z, end="")
 
-    for j in range(2, i + 1):  # digits right
+    for j in range(1, i + 1):  # digits right
         print(" ", end="")
 
     print("")
