@@ -1,13 +1,13 @@
-list = ['abc', 'bcd', 'abc', 'abd', 'abd', 'dcd', 'abc']
+set1 = {1, 10, 223, 413, 2}
+set2 = {1, 10, 223, 413, 2}
 
-list_len = len(list)
+result = False
 
-result = {i: list.count(i) for i in list}
+if set1 != set2:
+    set1_len = len(set1)
+    set2_len = len(set2)
+
+    result = set1.issubset(set2)
+
 print(result)
 
-"""for j in list:
-    c = list.count(j)
-    print(c)"""
-
-for k in result.values():
-    print(k, end=", ")
